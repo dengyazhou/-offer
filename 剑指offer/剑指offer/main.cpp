@@ -8,6 +8,7 @@
 #include <iostream>
 //#include "JZ6.cpp"
 //#include "JZ24.cpp"
+#include "JZ25.cpp"
 
 
 
@@ -50,4 +51,23 @@ int main(int argc, const char * argv[]) {
 //    return 0;
     
 #pragma mark JZ25 合并两个排序的链表
+    ListNode nodeR = ListNode(2);
+    ListNode nodeR1 = ListNode(4);
+    ListNode nodeR2 = ListNode(5);
+    nodeR.next = &nodeR1;
+    nodeR1.next = &nodeR2;
+    
+    ListNode nodeL = ListNode(2);
+    ListNode nodeL1 = ListNode(3);
+    ListNode nodeL2 = ListNode(6);
+    nodeL.next = &nodeL1;
+    nodeL1.next = &nodeL2;
+    
+    Solution solu;
+    ListNode *pHead = solu.Merge(&nodeR, &nodeL);
+    while (pHead) {
+        printf("%d\n",pHead->val);
+        pHead = pHead->next;
+    }
+    
 }
