@@ -8,7 +8,8 @@
 #include <iostream>
 //#include "JZ6.cpp"
 //#include "JZ24.cpp"
-#include "JZ25.cpp"
+//#include "JZ25.cpp"
+#include "JZ52.cpp"
 
 
 
@@ -51,20 +52,46 @@ int main(int argc, const char * argv[]) {
 //    return 0;
     
 #pragma mark JZ25 合并两个排序的链表
-    ListNode nodeR = ListNode(2);
-    ListNode nodeR1 = ListNode(4);
-    ListNode nodeR2 = ListNode(5);
+//    ListNode nodeR = ListNode(2);
+//    ListNode nodeR1 = ListNode(4);
+//    ListNode nodeR2 = ListNode(5);
+//    nodeR.next = &nodeR1;
+//    nodeR1.next = &nodeR2;
+//
+//    ListNode nodeL = ListNode(2);
+//    ListNode nodeL1 = ListNode(3);
+//    ListNode nodeL2 = ListNode(6);
+//    nodeL.next = &nodeL1;
+//    nodeL1.next = &nodeL2;
+//    
+//    Solution solu;
+//    ListNode *pHead = solu.Merge(&nodeR, &nodeL);
+//    while (pHead) {
+//        printf("%d\n",pHead->val);
+//        pHead = pHead->next;
+//    }
+    
+#pragma mark JZ52 两个链表的第一个公共结点
+    ListNode nodeR = ListNode(1);
+    ListNode nodeR1 = ListNode(2);
+    ListNode nodeR2 = ListNode(3);
+    ListNode nodeR3 = ListNode(6);
+    ListNode nodeR4 = ListNode(7);
     nodeR.next = &nodeR1;
     nodeR1.next = &nodeR2;
+    nodeR2.next = &nodeR3;
+    nodeR3.next = &nodeR4;
     
-    ListNode nodeL = ListNode(2);
-    ListNode nodeL1 = ListNode(3);
+    ListNode nodeL = ListNode(4);
+    ListNode nodeL1 = ListNode(5);
     ListNode nodeL2 = ListNode(6);
+    ListNode nodeL3 = ListNode(7);
     nodeL.next = &nodeL1;
     nodeL1.next = &nodeL2;
+    nodeL2.next = &nodeL3;
     
     Solution solu;
-    ListNode *pHead = solu.Merge(&nodeR, &nodeL);
+    ListNode *pHead = solu.FindFirstCommonNode(&nodeR, &nodeL);
     while (pHead) {
         printf("%d\n",pHead->val);
         pHead = pHead->next;

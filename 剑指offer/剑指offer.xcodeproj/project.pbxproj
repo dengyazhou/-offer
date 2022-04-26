@@ -11,6 +11,7 @@
 		93764A042816D642005B01D9 /* JZ6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93764A032816D642005B01D9 /* JZ6.cpp */; };
 		93AE12152816F16300C4B4EC /* JZ24.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93AE12142816F16300C4B4EC /* JZ24.cpp */; };
 		93AE12B32817CC2E00C4B4EC /* JZ25.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93AE12B22817CC2E00C4B4EC /* JZ25.cpp */; };
+		93AE12B5281834E000C4B4EC /* JZ52.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93AE12B4281834E000C4B4EC /* JZ52.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		93764A032816D642005B01D9 /* JZ6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JZ6.cpp; sourceTree = "<group>"; };
 		93AE12142816F16300C4B4EC /* JZ24.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JZ24.cpp; sourceTree = "<group>"; };
 		93AE12B22817CC2E00C4B4EC /* JZ25.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JZ25.cpp; sourceTree = "<group>"; };
+		93AE12B4281834E000C4B4EC /* JZ52.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JZ52.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				93764A032816D642005B01D9 /* JZ6.cpp */,
 				93AE12142816F16300C4B4EC /* JZ24.cpp */,
 				93AE12B22817CC2E00C4B4EC /* JZ25.cpp */,
+				93AE12B4281834E000C4B4EC /* JZ52.cpp */,
 			);
 			path = "剑指offer";
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 				93AE12152816F16300C4B4EC /* JZ24.cpp in Sources */,
 				93764A042816D642005B01D9 /* JZ6.cpp in Sources */,
 				937649FD2816D522005B01D9 /* main.cpp in Sources */,
+				93AE12B5281834E000C4B4EC /* JZ52.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
