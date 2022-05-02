@@ -5,6 +5,10 @@
 //  Created by 邓亚洲 on 2022/4/25.
 //
 
+/**
+ 1、macOS -> Application -> Command Line Tool -> Language 选C++
+ */
+
 #include <iostream>
 //#include "JZ6.cpp"
 //#include "JZ24.cpp"
