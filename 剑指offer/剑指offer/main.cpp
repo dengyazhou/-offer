@@ -16,7 +16,8 @@
 //#include "JZ52.cpp"
 //#include "JZ55.cpp"
 
-#include "BM23.cpp"
+//#include "BM23.cpp"
+#include "BM26.cpp"
 
 
 
@@ -126,16 +127,36 @@ int main(int argc, const char * argv[]) {
     
     
 #pragma mark BM23 二叉树的前序遍历
-    TreeNode *node3 = new TreeNode(3);
-    TreeNode *node2 = new TreeNode(2);
-    TreeNode *node1 = new TreeNode(1);
-    node1->right = node2;
-    node2->left = node3;
+//    TreeNode *node3 = new TreeNode(3);
+//    TreeNode *node2 = new TreeNode(2);
+//    TreeNode *node1 = new TreeNode(1);
+//    node1->right = node2;
+//    node2->left = node3;
+//    Solution solu;
+//    vector<int> obj = solu.preorderTraversal(node1);
+//    for (int i = 0; i < obj.size(); i++) {
+//        int temp = obj.at(i);
+//        printf("%d\n",temp);
+//    }
+    
+#pragma mark BM26 求二叉树的层序遍历
+    TreeNode *node5 = new TreeNode(7);
+    TreeNode *node4 = new TreeNode(15);
+    TreeNode *node3 = new TreeNode(20);
+    TreeNode *node2 = new TreeNode(9);
+    TreeNode *node1 = new TreeNode(3);
+    node1->left = node2;
+    node1->right = node3;
+    node3->left = node4;
+    node3->right = node5;
     Solution solu;
-    vector<int> obj = solu.preorderTraversal(node1);
+    vector<vector<int>> obj = solu.levelOrder(node1);
     for (int i = 0; i < obj.size(); i++) {
-        int temp = obj.at(i);
-        printf("%d\n",temp);
+        vector<int> item = obj[i];
+        for (int j = 0; j < item.size(); j++) {
+            printf("%d ",item[j]);
+        }
+        printf("\n");
     }
     
 }
