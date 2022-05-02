@@ -14,10 +14,10 @@
 //#include "JZ24.cpp"
 //#include "JZ25.cpp"
 //#include "JZ52.cpp"
-//#include "JZ55.cpp"
 
 //#include "BM23.cpp"
-#include "BM26.cpp"
+//#include "BM26.cpp"
+#include "BM28.cpp"
 
 
 
@@ -105,27 +105,6 @@ int main(int argc, const char * argv[]) {
 //        pHead = pHead->next;
 //    }
     
-#pragma mark JZ55 二叉树的深度
-//    TreeNode *node7 = new TreeNode(7);
-//    TreeNode *node6 = new TreeNode(6);
-//    TreeNode *node5 = new TreeNode(5);
-//    TreeNode *node4 = new TreeNode(4);
-//    TreeNode *node3 = new TreeNode(3);
-//    TreeNode *node2 = new TreeNode(2);
-//    TreeNode *node1 = new TreeNode(1);
-//    node1->left = node2;
-//    node1->right = node3;
-//    node2->left = node4;
-//    node2->right = node5;
-//    node3->right = node6;
-//    node5->left = node7;
-//    
-//    Solution solu;
-//    int depth = solu.TreeDepth(node1);
-//    printf("%d\n",depth);
-    
-    
-    
 #pragma mark BM23 二叉树的前序遍历
 //    TreeNode *node3 = new TreeNode(3);
 //    TreeNode *node2 = new TreeNode(2);
@@ -140,23 +119,41 @@ int main(int argc, const char * argv[]) {
 //    }
     
 #pragma mark BM26 求二叉树的层序遍历
-    TreeNode *node5 = new TreeNode(7);
-    TreeNode *node4 = new TreeNode(15);
-    TreeNode *node3 = new TreeNode(20);
-    TreeNode *node2 = new TreeNode(9);
-    TreeNode *node1 = new TreeNode(3);
+//    TreeNode *node5 = new TreeNode(7);
+//    TreeNode *node4 = new TreeNode(15);
+//    TreeNode *node3 = new TreeNode(20);
+//    TreeNode *node2 = new TreeNode(9);
+//    TreeNode *node1 = new TreeNode(3);
+//    node1->left = node2;
+//    node1->right = node3;
+//    node3->left = node4;
+//    node3->right = node5;
+//    Solution solu;
+//    vector<vector<int>> obj = solu.levelOrder(node1);
+//    for (int i = 0; i < obj.size(); i++) {
+//        vector<int> item = obj[i];
+//        for (int j = 0; j < item.size(); j++) {
+//            printf("%d ",item[j]);
+//        }
+//        printf("\n");
+//    }
+    
+#pragma mark BM28 二叉树的最大深度
+    TreeNode *node7 = new TreeNode(7);
+    TreeNode *node6 = new TreeNode(6);
+    TreeNode *node5 = new TreeNode(5);
+    TreeNode *node4 = new TreeNode(4);
+    TreeNode *node3 = new TreeNode(3);
+    TreeNode *node2 = new TreeNode(2);
+    TreeNode *node1 = new TreeNode(1);
     node1->left = node2;
     node1->right = node3;
-    node3->left = node4;
-    node3->right = node5;
+    node2->left = node4;
+    node2->right = node5;
+    node3->right = node6;
+    node5->left = node7;
     Solution solu;
-    vector<vector<int>> obj = solu.levelOrder(node1);
-    for (int i = 0; i < obj.size(); i++) {
-        vector<int> item = obj[i];
-        for (int j = 0; j < item.size(); j++) {
-            printf("%d ",item[j]);
-        }
-        printf("\n");
-    }
+    int depth = solu.maxDepth(node1);
+    printf("%d\n",depth);
     
 }

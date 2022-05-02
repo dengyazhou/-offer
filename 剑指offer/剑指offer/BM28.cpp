@@ -1,17 +1,16 @@
 //
-//  JZ55.cpp
+//  BM28.cpp
 //  剑指offer
 //
 //  Created by 邓亚洲 on 2022/5/2.
 //
-//JZ55 二叉树的深度
+//BM28 二叉树的最大深度
 
 #include <stdio.h>
 //max 函数需要引入 <algorithm>
 #include <algorithm>
 //using namespace std; max 和 std::max 等价
 using namespace std;
-
 
 struct TreeNode {
     int val;
@@ -24,9 +23,8 @@ class Solution {
     
     
 public:
-    int TreeDepth(TreeNode* pRoot) {
-        if (pRoot == NULL) { return 0; }
-        
-        return max(TreeDepth(pRoot->left),TreeDepth(pRoot->right)) + 1;
+    int maxDepth(TreeNode* root) {
+        if (root == NULL) { return 0; }
+        return max(maxDepth(root->left), maxDepth(root->right)) + 1;
     }
 };
