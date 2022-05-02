@@ -13,7 +13,10 @@
 //#include "JZ6.cpp"
 //#include "JZ24.cpp"
 //#include "JZ25.cpp"
-#include "JZ52.cpp"
+//#include "JZ52.cpp"
+//#include "JZ55.cpp"
+
+#include "BM23.cpp"
 
 
 
@@ -76,29 +79,63 @@ int main(int argc, const char * argv[]) {
 //    }
     
 #pragma mark JZ52 两个链表的第一个公共结点
-    ListNode nodeR = ListNode(1);
-    ListNode nodeR1 = ListNode(2);
-    ListNode nodeR2 = ListNode(3);
-    ListNode nodeR3 = ListNode(6);
-    ListNode nodeR4 = ListNode(7);
-    nodeR.next = &nodeR1;
-    nodeR1.next = &nodeR2;
-    nodeR2.next = &nodeR3;
-    nodeR3.next = &nodeR4;
+//    ListNode nodeR = ListNode(1);
+//    ListNode nodeR1 = ListNode(2);
+//    ListNode nodeR2 = ListNode(3);
+//    ListNode nodeR3 = ListNode(6);
+//    ListNode nodeR4 = ListNode(7);
+//    nodeR.next = &nodeR1;
+//    nodeR1.next = &nodeR2;
+//    nodeR2.next = &nodeR3;
+//    nodeR3.next = &nodeR4;
+//
+//    ListNode nodeL = ListNode(4);
+//    ListNode nodeL1 = ListNode(5);
+//    ListNode nodeL2 = ListNode(6);
+//    ListNode nodeL3 = ListNode(7);
+//    nodeL.next = &nodeL1;
+//    nodeL1.next = &nodeL2;
+//    nodeL2.next = &nodeL3;
+//
+//    Solution solu;
+//    ListNode *pHead = solu.FindFirstCommonNode(&nodeR, &nodeL);
+//    while (pHead) {
+//        printf("%d\n",pHead->val);
+//        pHead = pHead->next;
+//    }
     
-    ListNode nodeL = ListNode(4);
-    ListNode nodeL1 = ListNode(5);
-    ListNode nodeL2 = ListNode(6);
-    ListNode nodeL3 = ListNode(7);
-    nodeL.next = &nodeL1;
-    nodeL1.next = &nodeL2;
-    nodeL2.next = &nodeL3;
+#pragma mark JZ55 二叉树的深度
+//    TreeNode *node7 = new TreeNode(7);
+//    TreeNode *node6 = new TreeNode(6);
+//    TreeNode *node5 = new TreeNode(5);
+//    TreeNode *node4 = new TreeNode(4);
+//    TreeNode *node3 = new TreeNode(3);
+//    TreeNode *node2 = new TreeNode(2);
+//    TreeNode *node1 = new TreeNode(1);
+//    node1->left = node2;
+//    node1->right = node3;
+//    node2->left = node4;
+//    node2->right = node5;
+//    node3->right = node6;
+//    node5->left = node7;
+//    
+//    Solution solu;
+//    int depth = solu.TreeDepth(node1);
+//    printf("%d\n",depth);
     
+    
+    
+#pragma mark BM23 二叉树的前序遍历
+    TreeNode *node3 = new TreeNode(3);
+    TreeNode *node2 = new TreeNode(2);
+    TreeNode *node1 = new TreeNode(1);
+    node1->right = node2;
+    node2->left = node3;
     Solution solu;
-    ListNode *pHead = solu.FindFirstCommonNode(&nodeR, &nodeL);
-    while (pHead) {
-        printf("%d\n",pHead->val);
-        pHead = pHead->next;
+    vector<int> obj = solu.preorderTraversal(node1);
+    for (int i = 0; i < obj.size(); i++) {
+        int temp = obj.at(i);
+        printf("%d\n",temp);
     }
     
 }

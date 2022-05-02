@@ -11,14 +11,14 @@
 struct ListNode {
     int val;
     struct ListNode *next;
-    ListNode(int x):val(x),next(NULL) {}
+    ListNode(int x):val(x),next(NULL) {} //使用参数初始化列表来初始化字段
 };
 
 class Solution {
         
     
 public:
-    ListNode* Merge(ListNode *pHead1, ListNode *pHead2) {
+    ListNode* Merge(ListNode* pHead1, ListNode* pHead2) {
         ListNode *pHead = NULL;
         ListNode *pTNext = NULL;
         ListNode *pNext1 = NULL;

@@ -7,14 +7,14 @@
 //JZ6 从尾到头打印链表
 
 #include <stdio.h>
-
+//vector 需要引入 <vector>
 #include <vector>
 using namespace std;
 
 struct ListNode {
     int val;
     struct ListNode *next;
-    ListNode(int x):val(x),next(NULL) {}
+    ListNode(int x):val(x),next(NULL) {} //使用参数初始化列表来初始化字段
 };
 
 class Solution {
