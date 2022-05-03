@@ -17,7 +17,8 @@
 
 //#include "BM23.cpp"
 //#include "BM26.cpp"
-#include "BM28.cpp"
+#include "BM27.cpp"
+//#include "BM28.cpp"
 
 
 
@@ -138,9 +139,7 @@ int main(int argc, const char * argv[]) {
 //        printf("\n");
 //    }
     
-#pragma mark BM28 二叉树的最大深度
-    TreeNode *node7 = new TreeNode(7);
-    TreeNode *node6 = new TreeNode(6);
+#pragma mark BM27 按之字形顺序打印二叉树
     TreeNode *node5 = new TreeNode(5);
     TreeNode *node4 = new TreeNode(4);
     TreeNode *node3 = new TreeNode(3);
@@ -148,12 +147,34 @@ int main(int argc, const char * argv[]) {
     TreeNode *node1 = new TreeNode(1);
     node1->left = node2;
     node1->right = node3;
-    node2->left = node4;
-    node2->right = node5;
-    node3->right = node6;
-    node5->left = node7;
+    node3->left = node4;
+    node3->right = node5;
     Solution solu;
-    int depth = solu.maxDepth(node1);
-    printf("%d\n",depth);
+    vector<vector<int>> list = solu.print(node1);
+    for (int i = 0; i < list.size(); i++) {
+        vector<int> item = list[i];
+        for (int j = 0; j < item.size(); j++) {
+            printf("%d ",item[j]);
+        }
+        printf("\n");
+    }
+    
+#pragma mark BM28 二叉树的最大深度
+//    TreeNode *node7 = new TreeNode(7);
+//    TreeNode *node6 = new TreeNode(6);
+//    TreeNode *node5 = new TreeNode(5);
+//    TreeNode *node4 = new TreeNode(4);
+//    TreeNode *node3 = new TreeNode(3);
+//    TreeNode *node2 = new TreeNode(2);
+//    TreeNode *node1 = new TreeNode(1);
+//    node1->left = node2;
+//    node1->right = node3;
+//    node2->left = node4;
+//    node2->right = node5;
+//    node3->right = node6;
+//    node5->left = node7;
+//    Solution solu;
+//    int depth = solu.maxDepth(node1);
+//    printf("%d\n",depth);
     
 }

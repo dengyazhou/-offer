@@ -23,7 +23,7 @@ class Solution {
     
 public:
     
-    void traverse(vector<vector<int>>& res, TreeNode *root, int depth) {
+    void traverse(vector<vector<int>>& res, TreeNode* root, int depth) {
         if (root) {
             if (res.size() == depth) {
                 res.push_back(vector<int>{});

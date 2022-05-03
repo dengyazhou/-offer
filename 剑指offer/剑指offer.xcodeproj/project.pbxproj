@@ -15,6 +15,7 @@
 		93FC2249281FB51E00F93581 /* BM23.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93FC2248281FB51E00F93581 /* BM23.cpp */; };
 		93FC2254282013A800F93581 /* BM26.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93FC2253282013A800F93581 /* BM26.cpp */; };
 		93FC225628202BAC00F93581 /* BM28.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93FC225528202BAC00F93581 /* BM28.cpp */; };
+		93FC22582820C74A00F93581 /* BM27.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93FC22572820C74A00F93581 /* BM27.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		93FC2248281FB51E00F93581 /* BM23.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BM23.cpp; sourceTree = "<group>"; };
 		93FC2253282013A800F93581 /* BM26.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BM26.cpp; sourceTree = "<group>"; };
 		93FC225528202BAC00F93581 /* BM28.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BM28.cpp; sourceTree = "<group>"; };
+		93FC22572820C74A00F93581 /* BM27.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BM27.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				93AE12B4281834E000C4B4EC /* JZ52.cpp */,
 				93FC2248281FB51E00F93581 /* BM23.cpp */,
 				93FC2253282013A800F93581 /* BM26.cpp */,
+				93FC22572820C74A00F93581 /* BM27.cpp */,
 				93FC225528202BAC00F93581 /* BM28.cpp */,
 			);
 			path = "剑指offer";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FC22582820C74A00F93581 /* BM27.cpp in Sources */,
 				93FC225628202BAC00F93581 /* BM28.cpp in Sources */,
 				93FC2254282013A800F93581 /* BM26.cpp in Sources */,
 				93AE12B32817CC2E00C4B4EC /* JZ25.cpp in Sources */,
