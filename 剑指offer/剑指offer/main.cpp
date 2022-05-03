@@ -19,7 +19,8 @@
 //#include "BM26.cpp"
 //#include "BM27.cpp"
 //#include "BM28.cpp"
-#include "BM29.cpp"
+//#include "BM29.cpp"
+#include "BM31.cpp"
 
 
 
@@ -179,23 +180,41 @@ int main(int argc, const char * argv[]) {
 //    printf("%d\n",depth);
     
 #pragma mark BM29 二叉树中和为某一值的路径(一)
-    TreeNode *node8 = new TreeNode(7);
-    TreeNode *node7 = new TreeNode(2);
-    TreeNode *node6 = new TreeNode(9);
-    TreeNode *node5 = new TreeNode(11);
-    TreeNode *node4 = new TreeNode(1);
-    TreeNode *node3 = new TreeNode(8);
-    TreeNode *node2 = new TreeNode(4);
-    TreeNode *node1 = new TreeNode(5);
+//    TreeNode *node8 = new TreeNode(7);
+//    TreeNode *node7 = new TreeNode(2);
+//    TreeNode *node6 = new TreeNode(9);
+//    TreeNode *node5 = new TreeNode(11);
+//    TreeNode *node4 = new TreeNode(1);
+//    TreeNode *node3 = new TreeNode(8);
+//    TreeNode *node2 = new TreeNode(4);
+//    TreeNode *node1 = new TreeNode(5);
+//    node1->left = node2;
+//    node1->right = node3;
+//    node2->left = node4;
+//    node2->right = node5;
+//    node3->right = node6;
+//    node5->left = node7;
+//    node5->right = node8;
+//    Solution solu;
+//    bool ret = solu.hasPathSum(node1, 22);
+//    printf("%d\n",ret);
+    
+#pragma mark BM31 对称的二叉树
+    TreeNode *node7 = new TreeNode(3);
+    TreeNode *node6 = new TreeNode(4);
+    TreeNode *node5 = new TreeNode(4);
+    TreeNode *node4 = new TreeNode(3);
+    TreeNode *node3 = new TreeNode(2);
+    TreeNode *node2 = new TreeNode(2);
+    TreeNode *node1 = new TreeNode(1);
     node1->left = node2;
     node1->right = node3;
     node2->left = node4;
     node2->right = node5;
-    node3->right = node6;
-    node5->left = node7;
-    node5->right = node8;
+    node3->left = node6;
+    node3->right = node7;
     Solution solu;
-    bool ret = solu.hasPathSum(node1, 22);
+    bool ret = solu.isSymmetrical(node1);
     printf("%d\n",ret);
     
 }
