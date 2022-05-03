@@ -17,8 +17,9 @@
 
 //#include "BM23.cpp"
 //#include "BM26.cpp"
-#include "BM27.cpp"
+//#include "BM27.cpp"
 //#include "BM28.cpp"
+#include "BM29.cpp"
 
 
 
@@ -140,24 +141,24 @@ int main(int argc, const char * argv[]) {
 //    }
     
 #pragma mark BM27 按之字形顺序打印二叉树
-    TreeNode *node5 = new TreeNode(5);
-    TreeNode *node4 = new TreeNode(4);
-    TreeNode *node3 = new TreeNode(3);
-    TreeNode *node2 = new TreeNode(2);
-    TreeNode *node1 = new TreeNode(1);
-    node1->left = node2;
-    node1->right = node3;
-    node3->left = node4;
-    node3->right = node5;
-    Solution solu;
-    vector<vector<int>> list = solu.print(node1);
-    for (int i = 0; i < list.size(); i++) {
-        vector<int> item = list[i];
-        for (int j = 0; j < item.size(); j++) {
-            printf("%d ",item[j]);
-        }
-        printf("\n");
-    }
+//    TreeNode *node5 = new TreeNode(5);
+//    TreeNode *node4 = new TreeNode(4);
+//    TreeNode *node3 = new TreeNode(3);
+//    TreeNode *node2 = new TreeNode(2);
+//    TreeNode *node1 = new TreeNode(1);
+//    node1->left = node2;
+//    node1->right = node3;
+//    node3->left = node4;
+//    node3->right = node5;
+//    Solution solu;
+//    vector<vector<int>> list = solu.print(node1);
+//    for (int i = 0; i < list.size(); i++) {
+//        vector<int> item = list[i];
+//        for (int j = 0; j < item.size(); j++) {
+//            printf("%d ",item[j]);
+//        }
+//        printf("\n");
+//    }
     
 #pragma mark BM28 二叉树的最大深度
 //    TreeNode *node7 = new TreeNode(7);
@@ -176,5 +177,25 @@ int main(int argc, const char * argv[]) {
 //    Solution solu;
 //    int depth = solu.maxDepth(node1);
 //    printf("%d\n",depth);
+    
+#pragma mark BM29 二叉树中和为某一值的路径(一)
+    TreeNode *node8 = new TreeNode(7);
+    TreeNode *node7 = new TreeNode(2);
+    TreeNode *node6 = new TreeNode(9);
+    TreeNode *node5 = new TreeNode(11);
+    TreeNode *node4 = new TreeNode(1);
+    TreeNode *node3 = new TreeNode(8);
+    TreeNode *node2 = new TreeNode(4);
+    TreeNode *node1 = new TreeNode(5);
+    node1->left = node2;
+    node1->right = node3;
+    node2->left = node4;
+    node2->right = node5;
+    node3->right = node6;
+    node5->left = node7;
+    node5->right = node8;
+    Solution solu;
+    bool ret = solu.hasPathSum(node1, 22);
+    printf("%d\n",ret);
     
 }
