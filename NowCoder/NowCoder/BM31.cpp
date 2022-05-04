@@ -21,37 +21,54 @@ class Solution {
         
     
 public:
-    void preorderLeft(vector<int>& res, TreeNode* pRoot) {
-        if (pRoot == NULL) {
-            res.push_back(NULL);//是为了解决 {1,2,#} 和 {1,#,2}
-            return;
+  
+#pragma mark 2、递归
+    bool recursion(TreeNode* left, TreeNode* right) {
+        if (left == NULL && right == NULL) {
+            return true;
         }
-        res.push_back(pRoot->val);
-        preorderLeft(res, pRoot->left);
-        preorderLeft(res, pRoot->right);
-    }
-    
-    void preorderRight(vector<int>& res, TreeNode* pRoot) {
-        if (pRoot == NULL) {
-            res.push_back(NULL);
-            return;
+        if (left == NULL || right == NULL || left->val != right->val) {
+            return false;
         }
-        res.push_back(pRoot->val);
-        preorderRight(res, pRoot->right);
-        preorderRight(res, pRoot->left);
+        return recursion(left->left, right->right) && recursion(left->right, right->left);
     }
     
     bool isSymmetrical(TreeNode* pRoot) {
-        if (pRoot == NULL) {
-            return true;
-        }
-        vector<int> resLeft;
-        preorderLeft(resLeft, pRoot);
-        vector<int> resRight;
-        preorderRight(resRight, pRoot);
-        if (resLeft == resRight) {
-            return true;
-        }
-        return false;
+        return recursion(pRoot, pRoot);
     }
+    
+#pragma mark 1、左右各自前序遍历，然后对比
+//    void preorderLeft(vector<int>& res, TreeNode* pRoot) {
+//        if (pRoot == NULL) {
+//            res.push_back(NULL);//是为了解决 {1,2,#} 和 {1,#,2}
+//            return;
+//        }
+//        res.push_back(pRoot->val);
+//        preorderLeft(res, pRoot->left);
+//        preorderLeft(res, pRoot->right);
+//    }
+//
+//    void preorderRight(vector<int>& res, TreeNode* pRoot) {
+//        if (pRoot == NULL) {
+//            res.push_back(NULL);
+//            return;
+//        }
+//        res.push_back(pRoot->val);
+//        preorderRight(res, pRoot->right);
+//        preorderRight(res, pRoot->left);
+//    }
+//
+//    bool isSymmetrical(TreeNode* pRoot) {
+//        if (pRoot == NULL) {
+//            return true;
+//        }
+//        vector<int> resLeft;
+//        preorderLeft(resLeft, pRoot);
+//        vector<int> resRight;
+//        preorderRight(resRight, pRoot);
+//        if (resLeft == resRight) {
+//            return true;
+//        }
+//        return false;
+//    }
 };
