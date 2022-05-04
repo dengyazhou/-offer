@@ -1,6 +1,6 @@
 //
 //  BM27.cpp
-//  剑指offer
+//  NowCoder
 //
 //  Created by 邓亚洲 on 2022/5/3.
 //
