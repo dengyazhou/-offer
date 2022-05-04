@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930D275E282265C70052BCD0 /* YZ1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 930D275D282265C70052BCD0 /* YZ1.cpp */; };
 		931D775928222642002DB9AA /* JZ52.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 931D77322822253B002DB9AA /* JZ52.cpp */; };
 		931D775A28222642002DB9AA /* JZ6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 931D772D2822253B002DB9AA /* JZ6.cpp */; };
 		931D775C28222642002DB9AA /* BM26.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 931D772F2822253B002DB9AA /* BM26.cpp */; };
@@ -33,6 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		930D275D282265C70052BCD0 /* YZ1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = YZ1.cpp; sourceTree = "<group>"; };
 		931D772D2822253B002DB9AA /* JZ6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JZ6.cpp; sourceTree = "<group>"; };
 		931D772E2822253B002DB9AA /* BM31.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BM31.cpp; sourceTree = "<group>"; };
 		931D772F2822253B002DB9AA /* BM26.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BM26.cpp; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				931D77342822253B002DB9AA /* BM28.cpp */,
 				931D77332822253B002DB9AA /* BM29.cpp */,
 				931D772E2822253B002DB9AA /* BM31.cpp */,
+				930D275D282265C70052BCD0 /* YZ1.cpp */,
 			);
 			path = NowCoder;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930D275E282265C70052BCD0 /* YZ1.cpp in Sources */,
 				931D776028222642002DB9AA /* BM31.cpp in Sources */,
 				931D775D28222642002DB9AA /* BM28.cpp in Sources */,
 				931D776228222642002DB9AA /* JZ24.cpp in Sources */,
