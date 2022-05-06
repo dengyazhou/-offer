@@ -14,6 +14,7 @@ class Solution {
     
     
 public:
+    //快速排序
     void quickSort(vector<int>& arr,int begin, int end) {
         if (begin > end) {
             return;
@@ -40,6 +41,46 @@ public:
         
     }
     
+    
+    //拆分
+    void chaiFen(vector<int>& arr, int begin, int end) {
+        int mid = (begin + end)/2;
+        if (begin < end) {
+            chaiFen(arr, begin, mid);
+            chaiFen(arr, mid+1, end);
+            guiBing(arr, begin, mid, end);
+        }
+    }
+    
+    //归并
+    void guiBing(vector<int>& arr, int begin, int mid, int end) {
+        vector<int> temp;
+        int p0 = begin;
+        int p1 = mid + 1;
+        while (p0 <= mid && p1 <= end ) {
+            if (arr[p0] > arr[p1]) {
+                temp.push_back(arr[p1]);
+                p1++;
+            } else {
+                temp.push_back(arr[p0]);
+                p0++;
+            }
+        }
+        //剩余元素处理
+        while (p0 <= mid) {
+            temp.push_back(arr[p0]);
+            p0++;
+        }
+        while (p1 <= end) {
+            temp.push_back(arr[p1]);
+            p1++;
+        }
+        //把temp中的元素，赋值到arr中相应的位置
+        for (int i = 0; i < temp.size(); i++) {
+            arr[begin + i] = temp[i];
+        }
+    }
+    
     vector<int> MySort(vector<int>& arr) {
 #pragma mark 交换类排序法 1、冒泡排序法
         //在数据元素的序列中,对于某个元素，如果其后存 在一个元素小于它,则称之为存在一个逆序。 冒泡排序的基本思想就是通过两两相邻数据元素之间的比较和交换,不断地消去逆序，直到所有数据元素有序为止。
@@ -58,8 +99,8 @@ public:
 //        return arr;
         
 #pragma mark 交换类排序法 2、快速排序
-        quickSort(arr, 0, (int)arr.size()-1);
-        return arr;
+//        quickSort(arr, 0, (int)arr.size()-1);
+//        return arr;
         
 #pragma mark 插入类排序法 1、简单插入排序
         //简单插人排序是把n个待排序的元素看成是一个有序表和一个无序表,开始时,有序表只包含一个元素，而无序表包含另外n-1个元素，每次取无序表中的第一个元素插人到有序表中的正确位置,使之成为增加一个元素的新的有序表。插入元素时，插入位置及其后的记录依次向后移动。最后有序表的长度为n，而无序表为空，此时排序完成。
@@ -96,6 +137,10 @@ public:
         
 #pragma mark 选择类排序法 2、堆排序法
         
+        
+#pragma mark 归并排序
+        chaiFen(arr, 0, (int)arr.size()-1);
+        return arr;
     }
 
 };
