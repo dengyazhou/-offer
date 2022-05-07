@@ -15,6 +15,7 @@
 //#include "JZ25.cpp"
 //#include "JZ52.cpp"
 
+#include "BM17.cpp"
 //#include "BM23.cpp"
 //#include "BM26.cpp"
 //#include "BM27.cpp"
@@ -22,7 +23,7 @@
 //#include "BM29.cpp"
 //#include "BM31.cpp"
 
-#include "AB30.cpp"
+//#include "AB30.cpp"
 
 //#include "YZ1.cpp"
 
@@ -111,6 +112,12 @@ int main(int argc, const char * argv[]) {
 //        printf("%d\n",pHead->val);
 //        pHead = pHead->next;
 //    }
+    
+#pragma mark BM17 二分查找-I
+    vector<int> nums  = {0,1,3,4,6,10,13,14};
+    Solution solu;
+    int ret = solu.search(nums, 10);
+    printf("%d\n",ret);
     
 #pragma mark BM23 二叉树的前序遍历
 //    TreeNode *node3 = new TreeNode(3);
@@ -222,14 +229,13 @@ int main(int argc, const char * argv[]) {
 //    printf("%d\n",ret);
     
 #pragma mark AB30 排序
-    vector<int> arr = {3,2,1,10,7,8,4,6,3};
-//    vector<int> arr = {1,2};
-    Solution solu;
-    vector<int> res = solu.MySort(arr);
-    for (int i =0; i < res.size(); i++) {
-        printf("%d ",res[i]);
-    }
-    printf("\n");
+//    vector<int> arr = {3,2,1,10,7,8,4,6,3};
+//    Solution solu;
+//    vector<int> res = solu.MySort(arr);
+//    for (int i =0; i < res.size(); i++) {
+//        printf("%d ",res[i]);
+//    }
+//    printf("\n");
     
 #pragma mark YZ1 二叉树的Paths
 //    TreeNode *node8 = new TreeNode(7);

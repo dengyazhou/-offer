@@ -19,6 +19,7 @@
 		931D776228222642002DB9AA /* JZ24.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 931D77362822253B002DB9AA /* JZ24.cpp */; };
 		931D776328222642002DB9AA /* BM23.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 931D77312822253B002DB9AA /* BM23.cpp */; };
 		931D776528222691002DB9AA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 931D776428222691002DB9AA /* main.cpp */; };
+		932F8DBA2826AD48003E065E /* BM17.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 932F8DB92826AD48003E065E /* BM17.cpp */; };
 		937EA5122823DE4900204D29 /* AB30.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 937EA5112823DE4900204D29 /* AB30.cpp */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		931D77362822253B002DB9AA /* JZ24.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JZ24.cpp; sourceTree = "<group>"; };
 		931D775228222633002DB9AA /* NowCoder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NowCoder; sourceTree = BUILT_PRODUCTS_DIR; };
 		931D776428222691002DB9AA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		932F8DB92826AD48003E065E /* BM17.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BM17.cpp; sourceTree = "<group>"; };
 		937EA5112823DE4900204D29 /* AB30.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AB30.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 				931D77362822253B002DB9AA /* JZ24.cpp */,
 				931D77352822253B002DB9AA /* JZ25.cpp */,
 				931D77322822253B002DB9AA /* JZ52.cpp */,
+				932F8DB92826AD48003E065E /* BM17.cpp */,
 				931D77312822253B002DB9AA /* BM23.cpp */,
 				931D772F2822253B002DB9AA /* BM26.cpp */,
 				931D77302822253B002DB9AA /* BM27.cpp */,
@@ -157,6 +160,7 @@
 			files = (
 				930D275E282265C70052BCD0 /* YZ1.cpp in Sources */,
 				937EA5122823DE4900204D29 /* AB30.cpp in Sources */,
+				932F8DBA2826AD48003E065E /* BM17.cpp in Sources */,
 				931D776028222642002DB9AA /* BM31.cpp in Sources */,
 				931D775D28222642002DB9AA /* BM28.cpp in Sources */,
 				931D776228222642002DB9AA /* JZ24.cpp in Sources */,
