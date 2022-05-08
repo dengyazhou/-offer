@@ -15,13 +15,14 @@
 //#include "JZ25.cpp"
 //#include "JZ52.cpp"
 
-#include "BM17.cpp"
+//#include "BM17.cpp"
 //#include "BM23.cpp"
 //#include "BM26.cpp"
 //#include "BM27.cpp"
 //#include "BM28.cpp"
 //#include "BM29.cpp"
 //#include "BM31.cpp"
+#include "BM50.cpp"
 
 //#include "AB30.cpp"
 
@@ -114,10 +115,10 @@ int main(int argc, const char * argv[]) {
 //    }
     
 #pragma mark BM17 二分查找-I
-    vector<int> nums  = {0,1,3,4,6,10,13,14};
-    Solution solu;
-    int ret = solu.search(nums, 10);
-    printf("%d\n",ret);
+//    vector<int> nums  = {0,1,3,4,6,10,13,14};
+//    Solution solu;
+//    int ret = solu.search(nums, 10);
+//    printf("%d\n",ret);
     
 #pragma mark BM23 二叉树的前序遍历
 //    TreeNode *node3 = new TreeNode(3);
@@ -228,6 +229,15 @@ int main(int argc, const char * argv[]) {
 //    bool ret = solu.isSymmetrical(node1);
 //    printf("%d\n",ret);
     
+#pragma mark BM50 两数之和
+    vector<int> numbers = {3,2,4};
+    Solution solu;
+    vector<int> res = solu.twoSum(numbers, 6);
+    for (int i = 0; i < res.size(); i++) {
+        printf("%d ",res[i]);
+    }
+    printf("\n");
+
 #pragma mark AB30 排序
 //    vector<int> arr = {3,2,1,10,7,8,4,6,3};
 //    Solution solu;
