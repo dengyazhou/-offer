@@ -24,6 +24,7 @@
 		932F8DC42829005F003E065E /* BM51.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 932F8DC32829005F003E065E /* BM51.cpp */; };
 		932F8DC628290894003E065E /* BM42.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 932F8DC528290893003E065E /* BM42.cpp */; };
 		932F8DC8282912CE003E065E /* BM43.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 932F8DC7282912CE003E065E /* BM43.cpp */; };
+		932F8DCA2829258A003E065E /* BM44.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 932F8DC92829258A003E065E /* BM44.cpp */; };
 		937EA5122823DE4900204D29 /* AB30.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 937EA5112823DE4900204D29 /* AB30.cpp */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		932F8DC32829005F003E065E /* BM51.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BM51.cpp; sourceTree = "<group>"; };
 		932F8DC528290893003E065E /* BM42.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BM42.cpp; sourceTree = "<group>"; };
 		932F8DC7282912CE003E065E /* BM43.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BM43.cpp; sourceTree = "<group>"; };
+		932F8DC92829258A003E065E /* BM44.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BM44.cpp; sourceTree = "<group>"; };
 		937EA5112823DE4900204D29 /* AB30.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AB30.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				931D772E2822253B002DB9AA /* BM31.cpp */,
 				932F8DC528290893003E065E /* BM42.cpp */,
 				932F8DC7282912CE003E065E /* BM43.cpp */,
+				932F8DC92829258A003E065E /* BM44.cpp */,
 				932F8DC128280E36003E065E /* BM50.cpp */,
 				932F8DC32829005F003E065E /* BM51.cpp */,
 				937EA5112823DE4900204D29 /* AB30.cpp */,
@@ -181,6 +184,7 @@
 				931D776528222691002DB9AA /* main.cpp in Sources */,
 				932F8DC8282912CE003E065E /* BM43.cpp in Sources */,
 				931D775E28222642002DB9AA /* BM29.cpp in Sources */,
+				932F8DCA2829258A003E065E /* BM44.cpp in Sources */,
 				932F8DC228280E36003E065E /* BM50.cpp in Sources */,
 				931D775928222642002DB9AA /* JZ52.cpp in Sources */,
 				931D775F28222642002DB9AA /* JZ25.cpp in Sources */,

@@ -23,7 +23,8 @@
 //#include "BM29.cpp"
 //#include "BM31.cpp"
 //#include "BM42.cpp"
-#include "BM43.cpp"
+//#include "BM43.cpp"
+#include "BM44.cpp"
 //#include "BM50.cpp"
 //#include "BM51.cpp"
 
@@ -242,17 +243,21 @@ int main(int argc, const char * argv[]) {
 //    printf("%d\n",solu.pop());
     
 #pragma mark BM43 包含min函数的栈
-    Solution solu;
-    solu.push(-1);
-    solu.push(2);
-    printf("%d\n",solu.min());
-    printf("%d\n",solu.top());
-    solu.pop();
-    solu.push(1);
-    solu.top();
-    printf("%d\n",solu.top());
-    printf("%d\n",solu.min());
+//    Solution solu;
+//    solu.push(-1);
+//    solu.push(2);
+//    printf("%d\n",solu.min());
+//    printf("%d\n",solu.top());
+//    solu.pop();
+//    solu.push(1);
+//    solu.top();
+//    printf("%d\n",solu.top());
+//    printf("%d\n",solu.min());
     
+#pragma mark BM44 有效括号序列
+    string str = "]";
+    Solution solu;
+    printf("%d\n",solu.isValid(str));
     
 #pragma mark BM50 两数之和
 //    vector<int> numbers = {3,2,4};
