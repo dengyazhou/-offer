@@ -22,7 +22,8 @@
 //#include "BM28.cpp"
 //#include "BM29.cpp"
 //#include "BM31.cpp"
-#include "BM42.cpp"
+//#include "BM42.cpp"
+#include "BM43.cpp"
 //#include "BM50.cpp"
 //#include "BM51.cpp"
 
@@ -232,13 +233,26 @@ int main(int argc, const char * argv[]) {
 //    printf("%d\n",ret);
     
 #pragma mark BM42 用两个栈实现队列
+//    Solution solu;
+//    solu.push(2);
+//    solu.push(3);
+//    solu.push(4);
+//    printf("%d\n",solu.pop());
+//    printf("%d\n",solu.pop());
+//    printf("%d\n",solu.pop());
+    
+#pragma mark BM43 包含min函数的栈
     Solution solu;
+    solu.push(-1);
     solu.push(2);
-    solu.push(3);
-    solu.push(4);
-    printf("%d\n",solu.pop());
-    printf("%d\n",solu.pop());
-    printf("%d\n",solu.pop());
+    printf("%d\n",solu.min());
+    printf("%d\n",solu.top());
+    solu.pop();
+    solu.push(1);
+    solu.top();
+    printf("%d\n",solu.top());
+    printf("%d\n",solu.min());
+    
     
 #pragma mark BM50 两数之和
 //    vector<int> numbers = {3,2,4};
