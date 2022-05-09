@@ -21,6 +21,7 @@
 		931D776528222691002DB9AA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 931D776428222691002DB9AA /* main.cpp */; };
 		932F8DBA2826AD48003E065E /* BM17.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 932F8DB92826AD48003E065E /* BM17.cpp */; };
 		932F8DC228280E36003E065E /* BM50.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 932F8DC128280E36003E065E /* BM50.cpp */; };
+		932F8DC42829005F003E065E /* BM51.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 932F8DC32829005F003E065E /* BM51.cpp */; };
 		937EA5122823DE4900204D29 /* AB30.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 937EA5112823DE4900204D29 /* AB30.cpp */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		931D776428222691002DB9AA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		932F8DB92826AD48003E065E /* BM17.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BM17.cpp; sourceTree = "<group>"; };
 		932F8DC128280E36003E065E /* BM50.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BM50.cpp; sourceTree = "<group>"; };
+		932F8DC32829005F003E065E /* BM51.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BM51.cpp; sourceTree = "<group>"; };
 		937EA5112823DE4900204D29 /* AB30.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AB30.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 				931D77332822253B002DB9AA /* BM29.cpp */,
 				931D772E2822253B002DB9AA /* BM31.cpp */,
 				932F8DC128280E36003E065E /* BM50.cpp */,
+				932F8DC32829005F003E065E /* BM51.cpp */,
 				937EA5112823DE4900204D29 /* AB30.cpp */,
 				930D275D282265C70052BCD0 /* YZ1.cpp */,
 			);
@@ -175,6 +178,7 @@
 				931D775F28222642002DB9AA /* JZ25.cpp in Sources */,
 				931D776328222642002DB9AA /* BM23.cpp in Sources */,
 				931D775C28222642002DB9AA /* BM26.cpp in Sources */,
+				932F8DC42829005F003E065E /* BM51.cpp in Sources */,
 				931D776128222642002DB9AA /* BM27.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

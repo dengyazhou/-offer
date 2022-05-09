@@ -22,7 +22,8 @@
 //#include "BM28.cpp"
 //#include "BM29.cpp"
 //#include "BM31.cpp"
-#include "BM50.cpp"
+//#include "BM50.cpp"
+#include "BM51.cpp"
 
 //#include "AB30.cpp"
 
@@ -230,13 +231,19 @@ int main(int argc, const char * argv[]) {
 //    printf("%d\n",ret);
     
 #pragma mark BM50 两数之和
-    vector<int> numbers = {3,2,4};
+//    vector<int> numbers = {3,2,4};
+//    Solution solu;
+//    vector<int> res = solu.twoSum(numbers, 6);
+//    for (int i = 0; i < res.size(); i++) {
+//        printf("%d ",res[i]);
+//    }
+//    printf("\n");
+    
+#pragma mark BM51 数组中出现次数超过一半的数字
+    vector<int> numbers = {1,2,3,2,2,2,5,4,2};
     Solution solu;
-    vector<int> res = solu.twoSum(numbers, 6);
-    for (int i = 0; i < res.size(); i++) {
-        printf("%d ",res[i]);
-    }
-    printf("\n");
+    int ret = solu.MoreThanHalfNum_Solution(numbers);
+    printf("%d\n",ret);
 
 #pragma mark AB30 排序
 //    vector<int> arr = {3,2,1,10,7,8,4,6,3};
