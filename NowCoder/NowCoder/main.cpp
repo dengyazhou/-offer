@@ -28,7 +28,8 @@
 //#include "BM50.cpp"
 //#include "BM51.cpp"
 //#include "BM87.cpp"
-#include "BM88.cpp"
+//#include "BM88.cpp"
+#include "BM91.cpp"
 
 //#include "AB30.cpp"
 
@@ -283,9 +284,14 @@ int main(int argc, const char * argv[]) {
 //    solu.merge(A, 3, B, 4);
     
 #pragma mark BM88 判断是否为回文字符串
-    string str = "abaxba";
+//    string str = "abaxba";
+//    Solution solu;
+//    cout << solu.judge(str) << endl;
+    
+#pragma mark BM91 反转字符串
+    string str = "abcd";
     Solution solu;
-    cout << solu.judge(str) << endl;
+    cout << solu.solve(str) << endl;
 
 #pragma mark AB30 排序
 //    vector<int> arr = {3,2,1,10,7,8,4,6,3};
