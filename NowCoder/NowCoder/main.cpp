@@ -24,9 +24,10 @@
 //#include "BM31.cpp"
 //#include "BM42.cpp"
 //#include "BM43.cpp"
-#include "BM44.cpp"
+//#include "BM44.cpp"
 //#include "BM50.cpp"
 //#include "BM51.cpp"
+#include "BM87.cpp"
 
 //#include "AB30.cpp"
 
@@ -255,9 +256,9 @@ int main(int argc, const char * argv[]) {
 //    printf("%d\n",solu.min());
     
 #pragma mark BM44 有效括号序列
-    string str = "]";
-    Solution solu;
-    printf("%d\n",solu.isValid(str));
+//    string str = "]";
+//    Solution solu;
+//    printf("%d\n",solu.isValid(str));
     
 #pragma mark BM50 两数之和
 //    vector<int> numbers = {3,2,4};
@@ -273,6 +274,12 @@ int main(int argc, const char * argv[]) {
 //    Solution solu;
 //    int ret = solu.MoreThanHalfNum_Solution(numbers);
 //    printf("%d\n",ret);
+    
+#pragma mark BM87 合并两个有序的数组
+    int A[7] = {4,5,6};
+    int B[] = {1,2,3,7};
+    Solution solu;
+    solu.merge(A, 3, B, 4);
 
 #pragma mark AB30 排序
 //    vector<int> arr = {3,2,1,10,7,8,4,6,3};
