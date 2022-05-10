@@ -27,7 +27,8 @@
 //#include "BM44.cpp"
 //#include "BM50.cpp"
 //#include "BM51.cpp"
-#include "BM87.cpp"
+//#include "BM87.cpp"
+#include "BM88.cpp"
 
 //#include "AB30.cpp"
 
@@ -276,10 +277,15 @@ int main(int argc, const char * argv[]) {
 //    printf("%d\n",ret);
     
 #pragma mark BM87 合并两个有序的数组
-    int A[7] = {4,5,6};
-    int B[] = {1,2,3,7};
+//    int A[7] = {4,5,6};
+//    int B[] = {1,2,3,7};
+//    Solution solu;
+//    solu.merge(A, 3, B, 4);
+    
+#pragma mark BM88 判断是否为回文字符串
+    string str = "abaxba";
     Solution solu;
-    solu.merge(A, 3, B, 4);
+    cout << solu.judge(str) << endl;
 
 #pragma mark AB30 排序
 //    vector<int> arr = {3,2,1,10,7,8,4,6,3};
