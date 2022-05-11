@@ -25,11 +25,12 @@
 //#include "BM42.cpp"
 //#include "BM43.cpp"
 //#include "BM44.cpp"
+#include "BM47.cpp"
 //#include "BM50.cpp"
 //#include "BM51.cpp"
 //#include "BM87.cpp"
 //#include "BM88.cpp"
-#include "BM91.cpp"
+//#include "BM91.cpp"
 
 //#include "AB30.cpp"
 
@@ -262,6 +263,12 @@ int main(int argc, const char * argv[]) {
 //    Solution solu;
 //    printf("%d\n",solu.isValid(str));
     
+#pragma mark BM47 寻找第K大
+    vector<int> a = {1,3,5,2,2};
+    Solution solu;
+    cout << solu.findKth(a, (int)a.size(), 3) << endl;
+    
+    
 #pragma mark BM50 两数之和
 //    vector<int> numbers = {3,2,4};
 //    Solution solu;
@@ -289,9 +296,9 @@ int main(int argc, const char * argv[]) {
 //    cout << solu.judge(str) << endl;
     
 #pragma mark BM91 反转字符串
-    string str = "abcd";
-    Solution solu;
-    cout << solu.solve(str) << endl;
+//    string str = "abcd";
+//    Solution solu;
+//    cout << solu.solve(str) << endl;
 
 #pragma mark AB30 排序
 //    vector<int> arr = {3,2,1,10,7,8,4,6,3};
