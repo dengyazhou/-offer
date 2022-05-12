@@ -25,9 +25,10 @@
 //#include "BM42.cpp"
 //#include "BM43.cpp"
 //#include "BM44.cpp"
-#include "BM47.cpp"
+//#include "BM47.cpp"
 //#include "BM50.cpp"
 //#include "BM51.cpp"
+#include "BM83.cpp"
 //#include "BM87.cpp"
 //#include "BM88.cpp"
 //#include "BM91.cpp"
@@ -264,9 +265,9 @@ int main(int argc, const char * argv[]) {
 //    printf("%d\n",solu.isValid(str));
     
 #pragma mark BM47 寻找第K大
-    vector<int> a = {1,3,5,2,2};
-    Solution solu;
-    cout << solu.findKth(a, (int)a.size(), 3) << endl;
+//    vector<int> a = {1,3,5,2,2};
+//    Solution solu;
+//    cout << solu.findKth(a, (int)a.size(), 3) << endl;
     
     
 #pragma mark BM50 两数之和
@@ -283,6 +284,11 @@ int main(int argc, const char * argv[]) {
 //    Solution solu;
 //    int ret = solu.MoreThanHalfNum_Solution(numbers);
 //    printf("%d\n",ret);
+    
+#pragma mark BM83 字符串变形
+    string s = "This is a sample";
+    Solution solu;
+    cout << solu.trans(s, (int)s.size()) << endl;
     
 #pragma mark BM87 合并两个有序的数组
 //    int A[7] = {4,5,6};

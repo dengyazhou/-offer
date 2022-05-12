@@ -30,6 +30,7 @@
 		93792B45282AAEEF00B802CB /* BM91.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93792B44282AAEEF00B802CB /* BM91.cpp */; };
 		937EA5122823DE4900204D29 /* AB30.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 937EA5112823DE4900204D29 /* AB30.cpp */; };
 		93EC1246282BFA9F0085FC51 /* BM47.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93EC1245282BFA9F0085FC51 /* BM47.cpp */; };
+		93EC1248282D47800085FC51 /* BM83.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93EC1247282D47800085FC51 /* BM83.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +70,7 @@
 		93792B44282AAEEF00B802CB /* BM91.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BM91.cpp; sourceTree = "<group>"; };
 		937EA5112823DE4900204D29 /* AB30.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AB30.cpp; sourceTree = "<group>"; };
 		93EC1245282BFA9F0085FC51 /* BM47.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BM47.cpp; sourceTree = "<group>"; };
+		93EC1247282D47800085FC51 /* BM83.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BM83.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				93EC1245282BFA9F0085FC51 /* BM47.cpp */,
 				932F8DC128280E36003E065E /* BM50.cpp */,
 				932F8DC32829005F003E065E /* BM51.cpp */,
+				93EC1247282D47800085FC51 /* BM83.cpp */,
 				93792B40282A8B1400B802CB /* BM87.cpp */,
 				93792B42282AA90400B802CB /* BM88.cpp */,
 				93792B44282AAEEF00B802CB /* BM91.cpp */,
@@ -188,6 +191,7 @@
 				930D275E282265C70052BCD0 /* YZ1.cpp in Sources */,
 				937EA5122823DE4900204D29 /* AB30.cpp in Sources */,
 				932F8DBA2826AD48003E065E /* BM17.cpp in Sources */,
+				93EC1248282D47800085FC51 /* BM83.cpp in Sources */,
 				932F8DC628290894003E065E /* BM42.cpp in Sources */,
 				931D776028222642002DB9AA /* BM31.cpp in Sources */,
 				931D775D28222642002DB9AA /* BM28.cpp in Sources */,
