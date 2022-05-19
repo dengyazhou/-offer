@@ -15,6 +15,7 @@
 //#include "JZ25.cpp"
 //#include "JZ52.cpp"
 
+#include "BM6.cpp"
 //#include "BM17.cpp"
 //#include "BM23.cpp"
 //#include "BM26.cpp"
@@ -28,7 +29,7 @@
 //#include "BM47.cpp"
 //#include "BM50.cpp"
 //#include "BM51.cpp"
-#include "BM83.cpp"
+//#include "BM83.cpp"
 //#include "BM87.cpp"
 //#include "BM88.cpp"
 //#include "BM91.cpp"
@@ -122,6 +123,19 @@ int main(int argc, const char * argv[]) {
 //        printf("%d\n",pHead->val);
 //        pHead = pHead->next;
 //    }
+    
+#pragma mark BM6 判断链表中是否有环
+    ListNode node = ListNode(3);
+    ListNode node1 = ListNode(2);
+    ListNode node2 = ListNode(0);
+    ListNode node3 = ListNode(-4);
+    node.next = &node1;
+    node1.next = &node2;
+    node2.next = &node3;
+    node3.next = &node1;
+    Solution solu;
+    bool hasCycle = solu.hasCycle(&node);
+    std::cout << hasCycle << std::endl;
     
 #pragma mark BM17 二分查找-I
 //    vector<int> nums  = {0,1,3,4,6,10,13,14};
@@ -286,9 +300,9 @@ int main(int argc, const char * argv[]) {
 //    printf("%d\n",ret);
     
 #pragma mark BM83 字符串变形
-    string s = "This is a sample";
-    Solution solu;
-    cout << solu.trans(s, (int)s.size()) << endl;
+//    string s = "This is a sample";
+//    Solution solu;
+//    cout << solu.trans(s, (int)s.size()) << endl;
     
 #pragma mark BM87 合并两个有序的数组
 //    int A[7] = {4,5,6};
